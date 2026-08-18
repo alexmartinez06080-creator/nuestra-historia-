@@ -1,0 +1,606 @@
+﻿/* =====================================
+   CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #4a3024;
+}
+
+
+/* =====================================
+   PÁGINA PRINCIPAL
+===================================== */
+
+.inicio {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at center, #f8e8c8, #d8b98a);
+
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Corazones flotantes */
+
+.corazones span {
+    position: absolute;
+
+    color: rgba(120, 48, 48, 0.25);
+
+    font-size: 35px;
+
+    animation: flotar 8s infinite ease-in-out;
+}
+
+.corazones span:nth-child(1) {
+    left: 10%;
+    top: 20%;
+}
+
+.corazones span:nth-child(2) {
+    left: 80%;
+    top: 15%;
+    animation-delay: 2s;
+}
+
+.corazones span:nth-child(3) {
+    left: 20%;
+    top: 75%;
+    animation-delay: 4s;
+}
+
+.corazones span:nth-child(4) {
+    left: 75%;
+    top: 70%;
+    animation-delay: 1s;
+}
+
+.corazones span:nth-child(5) {
+    left: 50%;
+    top: 10%;
+    animation-delay: 3s;
+}
+
+@keyframes flotar {
+
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(10deg);
+    }
+}
+
+
+/* Portada */
+
+.portada {
+    width: 90%;
+    max-width: 600px;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 247, 225, 0.92);
+
+    border: 2px solid #b48a57;
+
+    box-shadow:
+        0 15px 40px rgba(70, 40, 20, 0.25);
+
+    border-radius: 8px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.portada h1 {
+    font-size: 42px;
+
+    color: #713b32;
+
+    margin: 15px 0;
+}
+
+.subtitulo {
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.adorno {
+    font-size: 38px;
+    color: #8b4a42;
+}
+
+
+/* QR */
+
+.qr-contenedor {
+    display: inline-block;
+
+    padding: 15px;
+
+    background: white;
+
+    border: 5px solid #8b5e3c;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    margin: 10px 0;
+}
+
+.qr-contenedor img {
+    width: 230px;
+    height: 230px;
+
+    display: block;
+}
+
+.escanea {
+    font-size: 20px;
+
+    color: #713b32;
+
+    margin-top: 15px;
+}
+
+
+/* =====================================
+   PÁGINA DE HISTORIA
+===================================== */
+
+.historia {
+    min-height: 100vh;
+
+    background-color: #ead7b5;
+
+    background-image:
+        radial-gradient(
+            rgba(100, 60, 30, 0.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 8px 8px;
+
+    padding: 40px 15px;
+}
+
+
+/* Papel principal */
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: auto;
+
+    background:
+        linear-gradient(
+            rgba(255, 248, 225, 0.94),
+            rgba(239, 218, 178, 0.94)
+        );
+
+    border: 2px solid #b18a59;
+
+    box-shadow:
+        0 20px 50px rgba(70, 40, 20, 0.25);
+
+    padding: 50px 35px;
+}
+
+
+/* =====================================
+   CABECERA
+===================================== */
+
+.cabecera {
+    text-align: center;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #b99b70;
+}
+
+.cabecera h1 {
+    font-size: 48px;
+
+    color: #713b32;
+
+    margin: 10px 0;
+}
+
+.cabecera p {
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+.ramita {
+    font-size: 40px;
+
+    color: #8b4a42;
+}
+
+
+/* =====================================
+   CONTADOR
+===================================== */
+
+.contador-seccion {
+    text-align: center;
+
+    padding: 50px 10px;
+}
+
+.contador-seccion h2,
+.galeria-seccion h2,
+.carta h2 {
+    color: #713b32;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.contador-intro {
+    margin-bottom: 25px;
+}
+
+.contador {
+    display: inline-block;
+
+    padding: 25px 35px;
+
+    background: #f5e6c8;
+
+    border: 2px solid #a4774b;
+
+    border-radius: 8px;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #713b32;
+
+    box-shadow:
+        0 8px 20px rgba(80, 50, 30, 0.15);
+}
+
+.desde {
+    margin-top: 15px;
+
+    font-style: italic;
+}
+
+
+/* =====================================
+   GALERÍA
+===================================== */
+
+.galeria-seccion {
+    text-align: center;
+
+    padding: 30px 0 50px;
+}
+
+.texto-seccion {
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+/* ESTILO PARA LOS VIDEOS */
+
+.foto video {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Fotos estilo polaroid */
+
+.foto {
+    background: #fffaf0;
+
+    padding: 12px 12px 20px;
+
+    box-shadow:
+        0 8px 18px rgba(60, 35, 20, 0.2);
+
+    transform: rotate(-1deg);
+
+    transition: 0.3s ease;
+}
+
+.foto:nth-child(even) {
+    transform: rotate(1.5deg);
+}
+
+.foto:hover {
+    transform:
+        rotate(0deg)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 30px rgba(60, 35, 20, 0.3);
+}
+
+.foto img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.foto p {
+    margin-top: 12px;
+
+    font-family: "Brush Script MT", cursive;
+
+    font-size: 20px;
+
+    color: #713b32;
+}
+
+
+/* =====================================
+   CARTA
+===================================== */
+
+.carta-seccion {
+    padding: 20px 0 50px;
+}
+
+.carta {
+    position: relative;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 60px 50px;
+
+    background:
+        linear-gradient(
+            rgba(248, 235, 201, 0.95),
+            rgba(232, 207, 160, 0.95)
+        );
+
+    border: 1px solid #a98454;
+
+    box-shadow:
+        inset 0 0 40px rgba(110, 70, 30, 0.12),
+        0 10px 25px rgba(70, 40, 20, 0.15);
+
+    line-height: 1.9;
+
+    font-size: 18px;
+}
+
+.carta h2 {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 30px;
+}
+
+.carta p {
+    margin-bottom: 20px;
+}
+
+.saludo {
+    font-style: italic;
+}
+
+.firma {
+    text-align: right;
+
+    margin-top: 35px;
+}
+
+/* CORAZONES CELESTES FLOTANTES */
+
+.corazones-celestes span {
+    position: fixed;
+    bottom: -50px;
+    color: #72c7e8;
+    font-size: 30px;
+    opacity: 0.7;
+    z-index: 10;
+    pointer-events: none;
+
+    animation: subirCorazon 8s linear infinite;
+}
+
+.corazones-celestes span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.corazones-celestes span:nth-child(2) {
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.corazones-celestes span:nth-child(3) {
+    left: 40%;
+    animation-delay: 4s;
+}
+
+.corazones-celestes span:nth-child(4) {
+    left: 60%;
+    animation-delay: 1s;
+}
+
+.corazones-celestes span:nth-child(5) {
+    left: 75%;
+    animation-delay: 3s;
+}
+
+.corazones-celestes span:nth-child(6) {
+    left: 90%;
+    animation-delay: 5s;
+}
+
+@keyframes subirCorazon {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+/* Sello */
+
+.sello {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #8b4a42;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 4px 10px rgba(60, 30, 20, 0.3);
+}
+
+
+/* =====================================
+   DECORACIONES
+===================================== */
+
+.decoracion {
+    position: fixed;
+
+    font-size: 55px;
+
+    opacity: 0.5;
+
+    z-index: 0;
+}
+
+.decoracion-1 {
+    left: 20px;
+    top: 30px;
+}
+
+.decoracion-2 {
+    right: 20px;
+    bottom: 30px;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    text-align: center;
+
+    color: #713b32;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #b99b70;
+
+    font-style: italic;
+}
+
+footer div {
+    font-size: 35px;
+
+    margin: 5px;
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+    .portada {
+        padding: 35px 20px;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .qr-contenedor img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .contenedor {
+        padding: 35px 18px;
+    }
+
+    .cabecera h1 {
+        font-size: 36px;
+    }
+
+    .contador {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .carta {
+        padding: 50px 25px;
+        font-size: 16px;
+    }
+
+    .foto img {
+        height: 250px;
+    }
+}
